@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Misky Musquykuna</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="modulo fondo-modulo">
+    <header class="encabezado">
+        <div class="logo"><a href="Inicio.html">🍰 Misky Musquykuna</a></div>
+        <div id="ph"> Hora : 10:00:00</div>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="blog.html" class="activo">BLOG</a></li>
+                <li><a href="ventas.html">VENTAS</a></li>
+                <li><a href="politicas.html">POLITICAS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido-pagina">
+        <section class="seccion-principal-blog">
+            <h1>Blog</h1>
+            <p>Recetas, consejos, novedades y todo sobre el mundo de la repostería.</p>
+            <p>Descubre el dulce mundo de la repostería artesanal con nuestras recetas, consejos, arte en pasteles y
+                reseñas de quienes ya probaron nuestra magia.</p>
+        </section>
+
+        <section class="seccion-blog">
+            <h2>ARTE</h2>
+            <div class="slider-arte">
+                <button class="btn-slider prev">❮</button>
+                <div class="slider-contenedor" id="sliderArte">
+                    <img src="./imagenes/IMGBLOG1.jpg" alt="Postre 1" class="slide activo">
+                    <img src="./imagenes/IMGBLOG2.jpeg" alt="Postre 2" class="slide">
+                    <img src="./imagenes/IMGBLOG3.jpg" alt="Postre 3" class="slide">
+                    <img src="./imagenes/IMGBLOG4.jpg" alt="Postre 4" class="slide">
+                </div>
+                <button class="btn-slider next">❯</button>
+            </div>
+        </section>
+
+
+        <section class="seccion-blog">
+            <h2>RECETAS</h2>
+            <div class="contenedor-recetas">
+                <div class="tarjeta-receta">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/FWEchnFUJkQ"
+                        allowfullscreen></iframe>
+                    <p>Receta para preparar pasteles de chocolate caseros.</p>
+                </div>
+                <div class="tarjeta-receta">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/vEnbipDc_dw"
+                        allowfullscreen></iframe>
+                    <p>Receta para preparar cupcakes de vainilla caseros.</p>
+                </div>
+                <div class="tarjeta-receta">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/Kw5TK2ff1Bw"
+                        allowfullscreen></iframe>
+                    <p>Receta para preparar galletas caseras.</p>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-blog">
+            <h2>RESEÑAS</h2>
+            <div class="contenedor-reseñas">
+                <div class="columna-reseña">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Karina Delgado"
+                        style="width: 60px; border-radius: 50%;">
+                    <p><strong>Karina Delgado</strong> - Lima<br>
+                        <small>🗓️ Lunes, 10 de junio de 2025</small>
+                    </p>
+                    <p>“Los postres de Misky Musquykuna son espectaculares. Pedí una torta de tres leches para el
+                        cumpleaños de mi hijo y fue un éxito total. La textura, el sabor y la presentación fueron
+                        impecables. ¡100% recomendados!”</p>
+                </div>
+
+                <div class="columna-reseña">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Luis Salazar"
+                        style="width: 60px; border-radius: 50%;">
+                    <p><strong>Luis Salazar</strong> - Arequipa<br>
+                        <small>🗓️ Miércoles, 19 de junio de 2025</small>
+                    </p>
+                    <p>“Descubrí esta pastelería por Instagram y pedí un cheesecake de maracuyá. ¡Qué delicia! Se nota
+                        que usan ingredientes frescos y el toque artesanal es único. Además, la atención fue excelente.”
+                    </p>
+                </div>
+
+                <div class="columna-reseña">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Gabriela Torres"
+                        style="width: 60px; border-radius: 50%;">
+                    <p><strong>Gabriela Torres</strong> - Cusco<br>
+                        <small>🗓️ Domingo, 23 de junio de 2025</small>
+                    </p>
+                    <p>“Mi pareja y yo pedimos una torta personalizada para nuestro aniversario. ¡Fue perfecta! El
+                        diseño fue hermoso y el sabor, increíble. Gracias Misky Musquykuna por hacer ese día aún más
+                        especial.”</p>
+                </div>
+            </div>
+            <div class="formulario-reseña">
+                <h3>Déjanos tu reseña</h3>
+                <form>
+                    <label for="nombre-usuario">Nombre:</label>
+                    <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+
+                    <label for="ciudad-usuario">Ciudad:</label>
+                    <input type="text" id="ciudad-usuario" name="ciudad-usuario" required>
+
+                    <label for="mensaje-reseña">Tu opinión:</label>
+                    <textarea id="mensaje-reseña" name="mensaje-reseña" rows="5" required></textarea>
+
+                    <button type="submit">Enviar reseña</button>
+                </form>
+            </div>
+        </section>
+        </section>
+
+    </main>
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <h2>SÍGUENOS</h2>
+            <div class="redes-sociales">
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
+                        alt="Facebook"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter--v1.png"
+                        alt="Twitter"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                        alt="Instagram"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"
+                        alt="Telegram"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
+                        alt="Teléfono"></a>
+            </div>
+            <p>&copy; 2025 Misky Musquykuna. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.seccion-blog h2', {
+            duration: 1000,
+            origin: 'left',
+            distance: '50px'
+        });
+
+        ScrollReveal().reveal('.item-arte, .tarjeta-receta, .columna-reseña', {
+            duration: 800,
+            origin: 'bottom',
+            distance: '30px',
+            interval: 100
+        });
+    </script>
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.querySelector(".btn-slider.prev");
+        const nextBtn = document.querySelector(".btn-slider.next");
+
+        let index = 0;
+
+        function mostrarSlide(nuevoIndex) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("activo");
+                if (i === nuevoIndex) {
+                    slide.classList.add("activo");
+                }
+            });
+        }
+
+        prevBtn.addEventListener("click", () => {
+            index = (index - 1 + slides.length) % slides.length;
+            mostrarSlide(index);
+        });
+
+        nextBtn.addEventListener("click", () => {
+            index = (index + 1) % slides.length;
+            mostrarSlide(index);
+        });
+
+    </script>
+
+
+</body>
+<script src="/PROYECTO FINAL/JAVASCRIPT/blogs.js"></script>
+</html>

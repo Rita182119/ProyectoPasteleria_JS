@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Misky Musquykuna</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="modulo fondo-modulo">
+    <header class="encabezado">
+        <div class="logo"><a href="Inicio.html">🍰 Misky Musquykuna</a></div>
+        <div id="ph"> Hora : 10:00:00</div>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="ventas.html">VENTAS</a></li>
+                <li><a href="politicas.html">POLITICAS</a></li>
+                <li><a href="contacto.html" class="activo">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido-pagina">
+
+        <!-- Título central de la sección -->
+        <div class="titulo-contacto">
+            <h1>CONTÁCTANOS</h1>
+            <p>¿Tienes dudas, pedidos especiales o comentarios? ¡Estamos encantados de escucharte! Puedes escribirnos
+                por redes o llamarnos.</p>
+        </div>
+
+        <!-- Cuadro centrado con datos y formulario -->
+        <div class="formulario-contacto">
+            <h2>Déjanos un mensaje</h2>
+            <form>
+                <label for="nombre">Nombres</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" pattern="[0-9]{8}" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <!-- Modal de Éxito -->
+            <div class="modal" id="modalExito">
+                <div class="modal-contenido exito">
+                    <p>✅ ¡Mensaje enviado satisfactoriamente!</p>
+                    <button onclick="cerrarModal('modalExito')">Cerrar</button>
+                </div>
+            </div>
+
+            <!-- Modal de Error (correo inválido) -->
+            <div class="modal" id="modalError">
+                <div class="modal-contenido error">
+                    <p>⚠️ Correo electrónico inválido. Por favor, verifica el formato.</p>
+                    <button onclick="cerrarModal('modalError')">Cerrar</button>
+                </div>
+
+            </div>
+            <div class="modal" id="modalErrorCampos">
+                <div class="modal-contenido error">
+                    <p>⚠️ Por favor, completa todos los campos.</p>
+                    <button onclick="cerrarModal('modalErrorCampos')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-ubicacion">
+            <div class="mapa">
+                <h2>Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37128.001538555!2d-77.09260487846856!3d-12.002126657510193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce53c69e3575%3A0x586e76dff7534a44!2sCIBERTEC!5e0!3m2!1ses!2spe!4v1751403890072!5m2!1ses!2spe"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="imagenes-contacto">
+                <div class="imagen-con-texto">
+                    <img src="./imagenes/whasap icon.jpeg" alt="">
+                    <p>+ 51 934921187</p>
+                    <p>+ 51 923419707</p>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="./imagenes/facebokicon.jpeg" alt="">
+                    <p>facebook/MiskyMusquykunaOficial</p>
+                    <p>facebook/MiskyMusquykunaPedidos</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <div class="contenedor-footer">
+            <h2>SÍGUENOS</h2>
+            <div class="redes-sociales">
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
+                        alt="Facebook"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter--v1.png"
+                        alt="Twitter"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                        alt="Instagram"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"
+                        alt="Telegram"></a>
+                <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
+                        alt="Teléfono"></a>
+            </div>
+            <p>&copy; 2025 Misky Musquykuna. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+</body>
+<script src="/PROYECTO FINAL/JAVASCRIPT/contacto.js"></script>
+
+</html>

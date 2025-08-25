@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ventas - Misky Musquykuna</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body class="modulo fondo-modulo">
+
+  <header class="encabezado">
+    <div class="logo"><a href="Inicio.html">🍰 Misky Musquykuna</a></div>
+    <div id="ph"> Hora : 10:00:00</div>
+    <nav>
+      <ul>
+        <li><a href="Inicio.html">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="ventas.html" class="activo">VENTAS</a></li>
+        <li><a href="politicas.html">POLITICAS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido-pagina">
+    <div class="titulo-contacto">
+      <h1>VENTA DEL PRODUCTO</h1>
+      <p>Completa los pasos a continuación para realizar tu pedido en línea.</p>
+    </div>
+
+    <div class="contenedor-pasos">
+
+      <!-- Inputs de pasos -->
+      <input type="radio" name="paso" id="paso1" checked>
+      <input type="radio" name="paso" id="paso2">
+      <input type="radio" name="paso" id="paso3">
+
+      <!-- Paso 1: Formulario -->
+      <section class="paso paso1">
+        <h2>Paso 1: DATOS DEL CLIENTE</h2><br><br>
+        <form class="formulario" id="formDatosCliente" onsubmit="return false;">
+          <label>Nombre <input type="text" id="nombre" name="nombre" required></label><br><br>
+          <label>Apellido <input type="text" id="nombre" name="apellido" required></label><br><br>
+          <label>DNI: <input type="text" id="dni" name="dni" pattern="\d{8}" title="Ingrese 8 dígitos"
+              required></label><br><br>
+          <label>Dirección: <input type="text" id="direccion" name="direccion"></label><br><br>
+          <label>Correo electrónico: <input type="email" id="email" name="email" required></label><br><br>
+          <label>N° de Celular: <input type="tel" id="celular" name="celular" pattern="\d{9}"
+              title="Ingrese 9 dígitos"></label><br><br>
+          <button type="button" id="btnPaso1" class="boton-pasoo">Siguiente</button>
+        </form>
+      </section>
+
+      <!-- Paso 2: Productos -->
+      <section class="paso paso2">
+        <h2>Paso 2: SELECCIÓN DE PRODUCTOS</h2>
+        <br><br>
+
+        <div class="contenedor-productos">
+          <!-- Pasteles -->
+          <div class="producto" data-precio="35">
+            <img src="./imagenes/IMGVENTAS1.jpg" alt="Torta de Chocolate">
+            <div class="info-producto">
+              <span class="nombre-producto">Torta de Chocolate</span>
+              <span class="precio-unitario">S/ 35.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="40">
+            <img src="./imagenes/IMGVENTAS2.jpg" alt="Torta Selva Negra">
+            <div class="info-producto">
+              <span class="nombre-producto">Torta Selva Negra</span>
+              <span class="precio-unitario">S/ 40.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="30">
+            <img src="./imagenes/tres leches.jpeg" alt="Tres leches">
+            <div class="info-producto">
+              <span class="nombre-producto">Tres leches</span>
+              <span class="precio-unitario">S/ 30.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+
+          <div class="producto" data-precio="50">
+            <img src="./imagenes/mocca.jpeg" alt="Mocca">
+            <div class="info-producto">
+              <span class="nombre-producto">Mocca</span>
+              <span class="precio-unitario">S/ 50.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="45">
+            <img src="./imagenes/delicia de durazno.jpeg" alt="Delicia de durazno">
+            <div class="info-producto">
+              <span class="nombre-producto">Delicia de durazno</span>
+              <span class="precio-unitario">S/ 45.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="30">
+            <img src="./imagenes/tartaleta.jpeg" alt="Tartaleta">
+            <div class="info-producto">
+              <span class="nombre-producto">Tres leches</span>
+              <span class="precio-unitario">S/ 30.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="37">
+            <img src="./imagenes/cheesecake.jpeg" alt="Cheesecake">
+            <div class="info-producto">
+              <span class="nombre-producto">Cheesecake</span>
+              <span class="precio-unitario">S/ 37.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="53">
+            <img src="./imagenes/pie de manzana.jpeg" alt="pie de manzana">
+            <div class="info-producto">
+              <span class="nombre-producto">Tres l</span>
+              <span class="precio-unitario">S/ 53.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="58">
+            <img src="./imagenes/pie de limon.jpeg" alt="pie de limon">
+            <div class="info-producto">
+              <span class="nombre-producto">Pie de limón</span>
+              <span class="precio-unitario">S/ 58.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="42">
+            <img src="./imagenes/crema volteada.jpeg" alt="crema volteada">
+            <div class="info-producto">
+              <span class="nombre-producto">Crema volteada</span>
+              <span class="precio-unitario">S/ 42.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="60">
+            <img src="./imagenes/mousse sublime.jpeg" alt="sublime">
+            <div class="info-producto">
+              <span class="nombre-producto">Mousse de sublime</span>
+              <span class="precio-unitario">S/ 60.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="30">
+            <img src="./imagenes/keke imperial .jpeg" alt="crema volteada">
+            <div class="info-producto">
+              <span class="nombre-producto">Keke Imperial</span>
+              <span class="precio-unitario">S/ 30.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+
+          <!-- Cupcakes -->
+          <div class="producto" data-precio="8">
+            <img src="./imagenes/IMGVENTAS3.jpg" alt="Cupcake de Vainilla">
+            <div class="info-producto">
+              <span class="nombre-producto">Cupcake de Vainilla</span>
+              <span class="precio-unitario">S/ 8.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+
+          <div class="producto" data-precio="7">
+            <img src="./imagenes/chocolate-removebg-preview.png" alt="Cupcake de chocolate">
+            <div class="info-producto">
+              <span class="nombre-producto">Cupcake de chocolate</span>
+              <span class="precio-unitario">S/ 7.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="8">
+            <img src="./imagenes/fresa.jpg" alt="Cupcake de fresa">
+            <div class="info-producto">
+              <span class="nombre-producto">Cupcake de fresa</span>
+              <span class="precio-unitario">S/ 8.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="8">
+            <img src="./imagenes/terciopleo.jpg" alt="Cupcake de terciopelo">
+            <div class="info-producto">
+              <span class="nombre-producto">Cupcake Tercio pelo</span>
+              <span class="precio-unitario">S/ 8.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="6">
+            <img src="./imagenes/limon.jpg" alt="Cupcake de limon">
+            <div class="info-producto">
+              <span class="nombre-producto">Cupcake de limón</span>
+              <span class="precio-unitario">S/ 8.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="10">
+            <img src="./imagenes/IMGVENTAS4.jpg" alt="Cupcake Red Velvet">
+            <div class="info-producto">
+              <span class="nombre-producto">Cupcake Red Velvet</span>
+              <span class="precio-unitario">S/ 10.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <!-- Bocaditos -->
+          <div class="producto" data-precio="6">
+            <img src="./imagenes/IMGVENTAS5.jpg" alt="Alfajores">
+            <div class="info-producto">
+              <span class="nombre-producto">Alfajores</span>
+              <span class="precio-unitario">S/ 6.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="3">
+            <img src="./imagenes/pollo.jpg" alt="pollo">
+            <div class="info-producto">
+              <span class="nombre-producto">Sanguchitos de pollo</span>
+              <span class="precio-unitario">S/3.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="3">
+            <img src="./imagenes/tartaleta.jpeg" alt="fresa">
+            <div class="info-producto">
+              <span class="nombre-producto">Mini tartaletas de fresa</span>
+              <span class="precio-unitario">S/3.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="2">
+            <img src="./imagenes/triple.jpg" alt="triple">
+            <div class="info-producto">
+              <span class="nombre-producto">Mini triple de jamon y queso</span>
+              <span class="precio-unitario">S/2.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="3">
+            <img src="./imagenes/empanadas.jpg" alt="triple">
+            <div class="info-producto">
+              <span class="nombre-producto">Mini empanadas</span>
+              <span class="precio-unitario">S/3.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div class="producto" data-precio="5">
+            <img src="./imagenes/IMGVENTAS6.jpg" alt="Trufas">
+            <div class="info-producto">
+              <span class="nombre-producto">Trufas</span>
+              <span class="precio-unitario">S/ 5.00</span>
+            </div>
+            <div class="contador">
+              <button>-</button>
+              <span class="cantidad">0</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="paginacion" style="margin-top: 20px;"></div>
+
+        <div id="subtotal-ventas" class="subtotal-estilizado">
+          Subtotal: S/ 0.00
+        </div>
+        <br><label for="paso3" class="boton-paso">Siguiente</label>
+      </section>
+
+      <!-- Paso 3: Pago -->
+      <section class="paso paso3">
+        <h2>Paso 3: MÉTODOS DE PAGO</h2>
+
+        <!-- Total en grande -->
+        <div class="total-pago" id="monto-total">Total: S/ 0.00</div>
+        <div class="metodo-pago">
+          <label class="tarjeta-pago">
+            <input type="radio" name="pago" value="tarjeta">
+            <span>💳 Tarjeta de Crédito</span>
+          </label>
+
+          <label class="tarjeta-pago">
+            <input type="radio" name="pago" value="yape">
+            <span>📱 Yape</span>
+          </label>
+
+          <label class="tarjeta-pago">
+            <input type="radio" name="pago" value="efectivo">
+            <span>💵 Efectivo</span>
+          </label>
+        </div>
+        <button class="boton-paso" id="btnFinalizar">Finalizar Pedido</button>
+        <div id="mensajeExito" style="display:none; color:green; font-weight:bold; text-align:center; margin-top:10px;">
+          ✅ ¡Compra realizada con éxito!
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor-footer">
+      <h2>SÍGUENOS</h2>
+      <div class="redes-sociales">
+        <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
+            alt="Facebook" /></a>
+        <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter--v1.png"
+            alt="Twitter" /></a>
+        <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+            alt="Instagram" /></a>
+        <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png"
+            alt="Telegram" /></a>
+        <a href="contacto.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Teléfono" /></a>
+      </div>
+      <p>&copy; 2025 Misky Musquykuna. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="modalError" class="modal-error">
+    <div class="modal-content-error">
+      <p id="mensajeError"></p>
+      <button id="cerrarModalError">Cerrar</button>
+    </div>
+  </div>
+
+</body>
+<script src="/PROYECTO FINAL/JAVASCRIPT/ventas.js"></script>
+
+</html>
