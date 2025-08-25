@@ -176,11 +176,6 @@
         height: 30px;
     }
 
-    .redes-sociales a:hover {
-        transform: scale(1.2);
-        filter: brightness(1.5);
-    }
-
     .pie-pagina p {
         margin-top: 30px;
         font-size: 0.9em;

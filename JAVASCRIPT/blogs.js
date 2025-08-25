@@ -98,3 +98,20 @@ function hora ()
 }
 
 document.body.setAttribute("onload"," hora()");
+
+function rotacionY(e)
+{
+    e.style.transform = "rotateY(360deg)";
+    e.style.transition = "all 1.5s";
+}
+function regresar(e)
+{
+    e.style.transform = "rotateY(0deg)";
+    e.style.transition = "all 1s";
+}
+
+let redes = document.getElementsByClassName("sociales");
+for (let j = 0; j < redes.length; j++) {
+    redes[j].setAttribute("onmouseover", "rotacionY(this)");
+    redes[j].setAttribute("onmouseout", "regresar(this)");
+}
